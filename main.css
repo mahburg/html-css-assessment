@@ -1,0 +1,16 @@
+body{
+  background: url("./img/main-bg.jpeg");
+  background-size: 100vw;
+  height: 100vh;
+
+}
+.nav_links{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
