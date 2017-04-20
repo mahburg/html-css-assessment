@@ -1,16 +1,74 @@
 body{
-  background: url("./img/main-bg.jpeg");
-  background-size: 100vw;
-  height: 100vh;
+  background: url("./img/main-bg.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  /*height: 100vh;*/
 
 }
-.nav_links{
+.ful_nav_links{
   padding-top: 10px;
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: space-around;
   color: white;
-  font-size: 40px;
+  font-size: 35px;
   font-family: sans-serif;
   font-weight: bold;
+}
+.mobile_menu{
+  display: flex;
+}
+.menu_button{
+  margin: 15px;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.menu_button a:link{
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  text-align: center;
+}
+.menu_button a:visited{
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  text-align: center;
+}
+.menu_button a:hover{
+  color: grey;
+  text-decoration: none;
+  font-size: 24px;
+  text-align: center;
+}
+.headline{
+  margin-top: 25vh;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+}
+.headline h2 {
+  font-size: 20px;
+  margin-top:5px;
+}
+.twit{
+  width: 25px;
+  height: 25px;
+  fill: white;
+}
+
+@media (min-width: 600px) {
+  .ful_nav_links{
+    display: flex;
+  }
+  .menu_button{
+    display: none;
+  }
 }
